@@ -1,1 +1,49 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="170" inline="true" x="127" y="148">
+    <value name="TIMES">
+      <block type="math_random" id="219"></block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="74">
+        <next>
+          <block type="movement_right" id="277">
+            <next>
+              <block type="movement_stop" id="287"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_repeat" id="463" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="502">
+            <field name="NUM">7</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_left" id="304"></block>
+        </statement>
+        <next>
+          <block type="movement_right" id="333">
+            <next>
+              <block type="multimedia_displaybmp" id="423">
+                <field name="BMP">Testing, testing, 123</field>
+                <next>
+                  <block type="variables_set" id="534" inline="true">
+                    <field name="VAR">Testing, testing, 123</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="558">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
